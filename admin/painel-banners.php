@@ -51,7 +51,7 @@
         </a>
         <div class="row">
         <?php
-          $stmt = $DB_con->prepare("SELECT id,nome,data_create,img FROM banners ORDER BY id DESC");
+          $stmt = $DB_con->prepare("SELECT id,nome,data_create,img,img2 FROM banners ORDER BY id DESC");
           $stmt->execute();
           if($stmt->rowCount() > 0) {
             while($row=$stmt->fetch(PDO::FETCH_ASSOC)){
@@ -62,6 +62,8 @@
               <div class="card-header">
               <p><i class="now-ui-icons ui-1_calendar-60"></i>  <?php echo $data_create ?></p>
                 <img class="img-center" src="uploads/banners/<?php echo $row['img']; ?>" onerror="this.src='./assets/img/sem.jpg'">
+                <br>
+                <img class="img-center" src="uploads/banners/<?php echo $row['img2']; ?>" onerror="this.src='./assets/img/sem.jpg'">
                 <h4><?php echo $nome ?></h4>
               </div>
               <div class="row container">

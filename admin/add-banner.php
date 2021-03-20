@@ -16,25 +16,27 @@
 		$imgFile = $_FILES['user_image']['name'];
 		$tmp_dir = $_FILES['user_image']['tmp_name'];
     $imgSize = $_FILES['user_image']['size'];
-        
+    
+    $imgFile2 = $_FILES['user_image2']['name'];
+    $tmp_dir2 = $_FILES['user_image2']['tmp_name'];
+    $imgSize2 = $_FILES['user_image2']['size'];
+
 		if(empty($nome)){
 			$errMSG = "Por favor Insira o nome";
-		}
-	
-		else if(empty($imgFile)){
-			$errMSG = "Selecione a imagem.";
 		}
 		else
 		{
 			$upload_dir = 'uploads/banners/'; // upload directory
 	
       $imgExt =  strtolower(pathinfo($imgFile,PATHINFO_EXTENSION));
+      $imgExt2 = strtolower(pathinfo($imgFile2, PATHINFO_EXTENSION));
 
 	
 			$valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'mp4'); // valid extensions
 			// rename uploading image
       $nome2 = preg_replace("/\s+/", "", $nome);
       $userpic = "banner-".$nome2.".".$imgExt;
+      $userpic2 = "banner2-".$nome2.".".$imgExt2;
 
 			// allow valid image file formats
 			if(in_array($imgExt, $valid_extensions)){			
@@ -46,12 +48,21 @@
 					$errMSG = "Imagem muito grande.";
 				}
 			}
+      if (in_array($imgExt2, $valid_extensions)) {
+        // Check file size '5MB'
+        if ($imgSize2 < 5000000) {
+          move_uploaded_file($tmp_dir2, $upload_dir . $userpic2);
+        } else {
+          $errMSG = "Imagem 2 muito grande.";
+        }
+      }
 		}
 		if(!isset($errMSG))
 		{
-			$stmt = $DB_con->prepare('INSERT INTO banners (nome,img) VALUES(:unome,:upic)');
+			$stmt = $DB_con->prepare('INSERT INTO banners (nome,img,img2) VALUES(:unome,:upic,:upic2)');
 			$stmt->bindParam(':unome',$nome);
       $stmt->bindParam(':upic',$userpic);
+      $stmt->bindParam(':upic2',$userpic2);
  		
 			if($stmt->execute())
 			{
@@ -121,9 +132,14 @@
                         <input value="<?php echo $nome; ?>" name="nome" type="text" class="form-control" placeholder="Nome do Banner">
                       </div>
                       <div class="form-group">
-                        <label>Banner</label>
+                        <label>Banner Desktop</label>
                         <br>
                         <input  type="file" name="user_image" accept="image/*" />
+                      </div>
+                      <div class="form-group">
+                        <label>Banner Mobile</label>
+                        <br>
+                        <input  type="file" name="user_image2" accept="image/*" />
                       </div>
                     </div>
                   </div>

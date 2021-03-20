@@ -40,7 +40,7 @@ include './admin/lead-insert.php';
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo back-to-top d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
       </a>
 
@@ -77,15 +77,16 @@ include './admin/lead-insert.php';
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
-    <div class="container">
+    <div class="container-fluid">
       <?php
-      $stmt = $DB_con->prepare('SELECT id, img FROM banners ORDER BY id DESC');
+      $stmt = $DB_con->prepare('SELECT id, img,img2 FROM banners ORDER BY id DESC');
       $stmt->execute();
       if ($stmt->rowCount() > 0) {
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
           extract($row);
       ?>
-          <img src="admin/uploads/banners/<?php echo $row['img']; ?>" class="img-fluid" alt="">
+          <img src="admin/uploads/banners/<?php echo $row['img']; ?>" class="img-fluid banner-mob" alt="">
+          <img src="admin/uploads/banners/<?php echo $row['img2']; ?>" class="img-fluid banner-desk" alt="">
         <?php
         }
       }
@@ -1328,7 +1329,7 @@ include './admin/lead-insert.php';
   </footer>
   <!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
