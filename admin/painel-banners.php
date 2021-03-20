@@ -61,7 +61,7 @@
             <div class="card card-chart pb-3">
               <div class="card-header">
               <p><i class="now-ui-icons ui-1_calendar-60"></i>  <?php echo $data_create ?></p>
-                <img class="img-center" src="uploads/<?php echo $row['img']; ?>" onerror="this.src='./assets/img/sem.jpg'">
+                <img class="img-center" src="uploads/banners/<?php echo $row['img']; ?>" onerror="this.src='./assets/img/sem.jpg'">
                 <h4><?php echo $nome ?></h4>
               </div>
               <div class="row container">

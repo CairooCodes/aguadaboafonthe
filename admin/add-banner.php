@@ -7,7 +7,7 @@
   else:
 	  header("Location: login.php");
   endif;
-  error_reporting( ~E_NOTICE ); // avoid notice
+  error_reporting( ~E_ALL ); // avoid notice
   
   if(isset($_POST['btnsave']))
 	{
@@ -26,14 +26,15 @@
 		}
 		else
 		{
-			$upload_dir = 'uploads/'; // upload directory
+			$upload_dir = 'uploads/banners/'; // upload directory
 	
       $imgExt =  strtolower(pathinfo($imgFile,PATHINFO_EXTENSION));
 
 	
-			$valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); // valid extensions
+			$valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'mp4'); // valid extensions
 			// rename uploading image
-      $userpic = "banner".$nome.".".$imgExt;
+      $nome2 = preg_replace("/\s+/", "", $nome);
+      $userpic = "banner-".$nome2.".".$imgExt;
 
 			// allow valid image file formats
 			if(in_array($imgExt, $valid_extensions)){			
