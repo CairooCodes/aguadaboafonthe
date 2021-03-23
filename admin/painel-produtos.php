@@ -60,7 +60,7 @@
           <div class="col-lg-4">
             <div class="card card-chart pb-3">
               <div class="card-header">
-                <img class="img-center" src="uploads/<?php echo $row['img']; ?>" onerror="this.src='./assets/img/sem.jpg'">
+                <img class="img-center" src="uploads/produtos/<?php echo $row['img']; ?>" onerror="this.src='./assets/img/sem.jpg'">
                 <h4><?php echo $nome ?></h4>
                 <p><?php echo $descricao ?></p>
               </div>

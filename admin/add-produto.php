@@ -34,10 +34,10 @@
       $imgExt =  strtolower(pathinfo($imgFile,PATHINFO_EXTENSION));
       $imgExt2 = strtolower(pathinfo($imgFile2, PATHINFO_EXTENSION));
 			$valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); // valid extensions
-		
+      $nome2 = preg_replace("/\s+/", "", $nome);
 			// rename uploading image
-      $userpic = $nome.".".$imgExt;
-      $userpic2 = $nome.".".$imgExt2;
+      $userpic = $nome2.".".$imgExt;
+      $userpic2 = $nome2.".".$imgExt2;
 		
 
 			// allow valid image file formats
