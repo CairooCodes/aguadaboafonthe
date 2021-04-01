@@ -989,9 +989,11 @@ header .getstarted:hover {
 }
 
 .pricing h3 {
-    font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
+    font-weight: 700;
+    color: #012970!important;
+    font-family: Poppins;
 }
 
 .pricing .price {

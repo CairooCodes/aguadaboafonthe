@@ -4,7 +4,7 @@
     -->
       <div class="logo">
         <a href="../index.php" class="simple-text logo-normal">
-          <img class="img-fluid" src="../assets/img/logosemfundo.png">
+          <img class="img-fluid" src="../assets/img/logo.png">
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">

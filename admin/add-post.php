@@ -7,7 +7,7 @@
   else:
 	  header("Location: login.php");
   endif;
-  error_reporting( ~E_NOTICE ); // avoid notice
+  error_reporting( ~E_ALL ); // avoid notice
   
   if(isset($_POST['btnsave']))
 	{
@@ -55,7 +55,7 @@
 		}
 		else
 		{
-			$upload_dir = 'uploads/'; // upload directory
+			$upload_dir = 'uploads/blog/'; // upload directory
 	
       $imgExt =  strtolower(pathinfo($imgFile,PATHINFO_EXTENSION));
       $imgExt2 = strtolower(pathinfo($imgFile2,PATHINFO_EXTENSION));
