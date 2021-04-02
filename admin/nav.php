@@ -10,7 +10,7 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
-            <a href="painel_controle.php">
+            <a href="painel-controle.php">
               <i class="now-ui-icons design_app"></i>
               <p>Painel de Controle</p>
             </a>
@@ -60,7 +60,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="painel_controle.php">Painel de Controle</a>
+            <a class="navbar-brand" href="painel-controle.php">Painel de Controle</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>

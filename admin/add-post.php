@@ -66,9 +66,10 @@
 	
 			$valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); // valid extensions
 			// rename uploading image
-      $userpic = $titulo."1.".$imgExt;
-			$userpic2 = $titulo."2.".$imgExt2;
-			$userpic3 = $titulo."3.".$imgExt3;
+      $titulo2 = preg_replace("/\s+/", "", $titulo);
+      $userpic = $titulo2."1.".$imgExt;
+			$userpic2 = $titulo2."2.".$imgExt2;
+			$userpic3 = $titulo2."3.".$imgExt3;
 			// allow valid image file formats
 			if(in_array($imgExt, $valid_extensions)){			
 				// Check file size '5MB'
@@ -153,11 +154,11 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/logofonte.png">
-  <link rel="icon" type="image/png" href="../assets/img/logofonte.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/logo.png">
+  <link rel="icon" type="image/png" href="../assets/img/logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Painel Blog / Fruta Polpa
+    Água da Boa Fonthe / Painel Blog
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
