@@ -1019,9 +1019,7 @@ header .getstarted:hover {
     font-weight: 300;
 }
 
-.pricing img {
-    padding: 30px 40px;
-}
+
 
 .pricing ul {
     padding: 0;
@@ -2456,3 +2454,45 @@ header .getstarted:hover {
     font-size: 13px;
     color: #012970;
 }
+
+.contact2 {
+    position: fixed;
+    bottom:20px;
+    right: 10px;
+    z-index: 3;
+    background: linear-gradient(90deg,#012970,#00d1f7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    float: left;
+    transition: 0.3s ease;
+  }
+  
+  
+  .btn-contact {
+    width: 60px;
+    padding-top: 7px;
+  }
+
+  .btn-contact i {
+      color:white;
+      font-size:20px;
+      margin-left:2px;
+  }
+  
+  .modal {
+    z-index: 9999;
+  }
+
+  .inner-page h1 {
+      font-size:22px;
+      font-weight: bold;
+      font-family: futurabook;
+      color: #012970;
+
+  }
+
+  .inner-page h1 > span {
+    border-bottom: 4px solid #012970;
+  }
