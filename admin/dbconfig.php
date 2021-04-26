@@ -1,5 +1,5 @@
 <?php 
-	/*$DB_HOST = 'aguadaboafonth.mysql.dbaas.com.br';
+	$DB_HOST = 'aguadaboafonth.mysql.dbaas.com.br';
 	$DB_USER = 'aguadaboafonth';
 	$DB_PASS = 'Cf3571fcc';
 	$DB_NAME = 'aguadaboafonth';
@@ -10,11 +10,11 @@
 	}
 	catch(PDOException $e){
 		echo $e->getMessage();
-	}*/
+	}
 
-	$DB_HOST = 'localhost';
+	/*$DB_HOST = 'localhost';
 	$DB_USER = 'root';
-	$DB_PASS = 'root';
+	$DB_PASS = '';
 	$DB_NAME = 'agua';
 	
 	try{
@@ -23,5 +23,5 @@
 	}
 	catch(PDOException $e){
 		echo $e->getMessage();
-	}
+	}*/
 ?>

@@ -278,7 +278,7 @@ include './admin/lead-insert.php';
 
   </main>
   <!-- End #main -->
-  <?php include "views/navbar.php"; ?>
+  <?php include "views/footer.php"; ?>
 
 
 
