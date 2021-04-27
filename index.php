@@ -61,7 +61,7 @@ include './admin/lead-insert.php';
       ?>
       <div data-aos="fade-up" data-aos-delay="600">
         <div class="text-center">
-          <a href="https://api.whatsapp.com/send?phone=86994807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+          <a href="https://api.whatsapp.com/send?phone=8694807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
             <span>LIGUE AGORA</span>
             <i class="bi bi-phone"></i>
           </a>
@@ -82,7 +82,7 @@ include './admin/lead-insert.php';
         <div class="clients-slider swiper-container">
           <div class="swiper-wrapper align-items-center">
             <?php
-            $stmt = $DB_con->prepare("SELECT nome, img FROM produtos ORDER BY id ASC");
+            $stmt = $DB_con->prepare("SELECT nome, img, status FROM produtos ORDER BY id ASC");
             $stmt->execute();
             if ($stmt->rowCount() > 0) {
               while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -90,13 +90,16 @@ include './admin/lead-insert.php';
             ?>
                 <div class="swiper-slide shadow p-4">
                   <div class="box p-4">
+                    <?php if ($status=='2') {?>
+                      <span class="featured">EM BREVE</span>
+                    <?php }?>
                     <h3><a href="produto.php?nome=<?php echo $nome ?>"><?php echo $nome ?></a></h3>
                     <!--<div class="price"><sup>R$</sup>10,00</div>-->
                     <img src="./admin/uploads/produtos/<?php echo $row['img']; ?>" class="img-fluid" alt="">
                     <ul>
-                      <li><?php echo $nome ?> DE AGÚA ADICIONADA DE SAIS MINEIRAS</li>
+                      <li><?php echo $nome ?> AGÚA ADICIONADA DE SAIS</li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=86994807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações" class="btn-buy">SAIBA MAIS</a>
+                    <a href="https://api.whatsapp.com/send?phone=8694807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações" class="btn-buy">SAIBA MAIS</a>
                   </div>
                 </div>
             <?php
@@ -123,35 +126,33 @@ include './admin/lead-insert.php';
             <div class="col-lg-6">
 
               <div class="row gy-4">
-                <div class="col-6">
+                <div class="col-12">
                   <div class="info-box">
-                    <i class="bi bi-geo-alt"></i>
-                    <h3>Localização</h3>
-                    <p>Teresina, PI</p>
+
+                    <h3 class="text-center"> <i class="bi bi-geo-alt"></i> Localização</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.2515795128497!2d-42.758376085236904!3d-4.897500496444112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwNTMnNTEuMCJTIDQywrA0NScyMi4zIlc!5e0!3m2!1spt-BR!2sbr!4v1619478803276!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>
                 </div>
-                <div class="col-6">
-                  <div class="info-box">
-                    <i class="bi bi-telephone"></i>
-                    <h3>Telefone</h3>
-                    <p>+55 (86) 99480-7384 Whatsapp<br>+55 (86) 99512-2319 </p>
+                <div class="col-12">
+                  <div class="info-box text-center">
+                    <h3>Números para contato</h3>
+                    <p><i class="bi bi-whatsapp" style="font-size:20px"></i> +55 (86) 99480-7384 <i class="bi bi-telephone" style="font-size:20px"></i> +55 (86) 99512-2319 </p>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                   <div class="info-box">
-                    <i class="bi bi-envelope"></i>
-                    <h3>Email</h3>
-                    <p>atendimento@aguadaboafonthe.com.br</p>
-                    <p>comercial@aguadaboafonte.com.br</p>
-                    <p>financeiro@aguadaboafonthe.com.br</p>
+                    <h3 class="text-center"><i class="bi bi-envelope" style="font-size:20px"></i> Email</h3>
+                    <p> atendimento@aguadaboafonthe.com.br</p>
+                    <p> comercial@aguadaboafonte.com.br</p>
+                    <p> financeiro@aguadaboafonthe.com.br</p>
 
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                   <div class="info-box">
-                    <i class="bi bi-clock"></i>
-                    <h3>Funcionamento</h3>
-                    <p>Segunda - Sexta<br>9:00 - 18:00</p>
+                    <h3 class="text-center"><i class="bi bi-clock" style="font-size:20px"></i> Funcionamento</h3>
+                    <p>Segunda à Sexta: 7:00 - 17:00</p>
+                    <p>Sábado - 7:00: 11:00</p>
                   </div>
                 </div>
               </div>
@@ -174,7 +175,7 @@ include './admin/lead-insert.php';
                     <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
                   </div>
                   <div class="form-group col-md-12 mb-2">
-                    <label for="nome">Assunto</label>
+                    <label for="nome"><h3 class="text-center">Assunto</h3></label>
                     <select name="opc" id="opc" class="form-control">
                       <option value='atendimento'>Atendimento</option>
                       <option value='financeiro'>Financeiro</option>
@@ -183,7 +184,7 @@ include './admin/lead-insert.php';
                   </div>
                 </div>
                 <div class="form-group mb-2">
-                  <label for="nome">Mensagem</label>
+                  <label for="nome"><h3 class="text-center">Mensagem</h3></label>
                   <textarea class="form-control" name="mensagem" rows="10" placeholder="Deixe uma mensagem para nós"></textarea>
                 </div>
                 <div class="text-center"><button type="submit" name="submit">Enviar</button></div>

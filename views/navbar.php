@@ -52,7 +52,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="text-center">Preencha o formulário e recebe atendimento especializado</h5>
+        <h3 class="text-center">Preencha o formulário e recebe atendimento especializado</h3>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -70,7 +70,7 @@
               <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
             </div>
             <div class="form-group col-md-12 mb-2">
-              <label for="nome">Assunto</label>
+              <label for="nome"><h3 class="text-center">Assunto</h3></label>
               <select name="opc" id="opc" class="form-control">
                 <option value='atendimento'>Atendimento</option>
                 <option value='financeiro'>Financeiro</option>
@@ -79,10 +79,10 @@
             </div>
           </div>
           <div class="form-group mb-2">
-            <label for="nome">Mensagem</label>
+            <label for="nome"><h3 class="text-center">Mensagem</h3></label>
             <textarea class="form-control" name="mensagem" rows="10" placeholder="Deixe uma mensagem para nós"></textarea>
           </div>
-          <div class="text-center"><button type="submit" class="btn btn-primary" name="submit">Enviar</button></div>
+          <div class="text-center"><button type="submit" class="btn btn-modal" name="submit">Enviar</button></div>
         </form>
       </div>
       <div class="modal-footer">

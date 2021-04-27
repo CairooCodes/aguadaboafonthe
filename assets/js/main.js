@@ -172,7 +172,7 @@
      * Clients Slider
      */
     new Swiper('.clients-slider', {
-        loop: true,
+        loop: false,
         slidesPerView: 'auto',
         pagination: {
             el: '.swiper-pagination',

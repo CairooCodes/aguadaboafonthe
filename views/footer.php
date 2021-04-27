@@ -3,7 +3,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
+          <div class="col-lg-4 col-md-12 footer-info">
             <a href="index.php" class="logo d-flex align-items-center">
               <img src="assets/img/logo.png" alt="">
             </a>
@@ -17,7 +17,7 @@
             </div>-->
           </div>
 
-          <div class="col-lg-2 col-6 footer-links">
+          <div class="col-lg-4 col-6 footer-links">
             <h4>MAPA DO SITE</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="index.php">Home</a></li>
@@ -28,24 +28,14 @@
             </ul>
           </div>
 
-          <div class="col-lg-2 col-6 footer-links">
+          <div class="col-lg-4 col-6 footer-links">
             <h4>Produtos</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#products">Garrafa de 330 ML</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#products">Garrafa de 330 ML - Em breve</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#products">Garrafa de 550 ML</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#products">Garrafa de 1 Litro</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#products">Garrafa de 1.5 Litro - Em breve</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#products">Garrafa de 20 Litros</a></li>
             </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contato</h4>
-            <p>
-              Teresina <br> Piauí<br> Brasil <br><br>
-              <strong>Telefone:</strong> +55 (86) 99480-7384<br>
-              <strong>Email:</strong> comercial@aguadaboafonthe.com.br<br>
-            </p>
-
           </div>
         </div>
       </div>

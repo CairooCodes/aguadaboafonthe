@@ -2496,3 +2496,15 @@ header .getstarted:hover {
   .inner-page h1 > span {
     border-bottom: 4px solid #012970;
   }
+
+  .modal-content h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #012970;
+    text-transform: uppercase;
+  }
+
+  .btn-modal {
+      background-color:#012970;
+      color:white;
+  }
