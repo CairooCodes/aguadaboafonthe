@@ -4,14 +4,14 @@
     <div class="container-fluid container-xl d-flex justify-content-between">
       <div>
         <a href="index.php" class="logo  d-flex align-items-center">
-          <img src="assets/img/logo.png" alt="">
+          <img src="assets/img/logo-natal.png" alt="">
         </a>
       </div>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
           <li><a class="nav-link" href="quem-somos.php">Quem Somos</a></li>
-          <li class="dropdown"><a href="index.php#products"><span>Produtos</span><!-- <i class="bi bi-chevron-down"></i>--></a>
+          <li><a class="nav-link" href="index.php#products">Produtos</a></li>
           <!--<ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -32,7 +32,7 @@
         </ul>
       </nav>
       <div>
-        <a class="getstarted scrollto back-to-top2" href="https://api.whatsapp.com/send?phone=86994807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações">LIGUE AGORA <i class="bi bi-phone"></i></a>
+        <a class="getstarted scrollto back-to-top2" href="https://api.whatsapp.com/send?phone=55869994807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações">LIGUE AGORA <i class="bi bi-phone"></i></a>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </div>
       <!-- .navbar -->
@@ -54,7 +54,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="text-center">Preencha o formulário e recebe atendimento especializado</h5>
+        <h3 class="text-center">Preencha o formulário e recebe atendimento especializado</h3>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -72,7 +72,7 @@
               <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
             </div>
             <div class="form-group col-md-12 mb-2">
-              <label for="nome">Assunto</label>
+              <label for="nome"><h3 class="text-center">Assunto</h3></label>
               <select name="opc" id="opc" class="form-control">
                 <option value='atendimento'>Atendimento</option>
                 <option value='financeiro'>Financeiro</option>
@@ -81,10 +81,10 @@
             </div>
           </div>
           <div class="form-group mb-2">
-            <label for="nome">Mensagem</label>
+            <label for="nome"><h3 class="text-center">Mensagem</h3></label>
             <textarea class="form-control" name="mensagem" rows="10" placeholder="Deixe uma mensagem para nós"></textarea>
           </div>
-          <div class="text-center"><button type="submit" class="btn btn-primary" name="submit">Enviar</button></div>
+          <div class="text-center"><button type="submit" class="btn btn-modal" name="submit">Enviar</button></div>
         </form>
       </div>
       <div class="modal-footer">

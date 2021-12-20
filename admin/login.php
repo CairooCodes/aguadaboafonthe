@@ -11,11 +11,11 @@ if (isset($_POST['ok'])):
 	$_1->Setpass($pass);
 
 	if($_1->logar()):
-	header("Location:painel_controle.php");
+	header("Location:painel-controle.php");
 	else:
 ?>
 	<script>
-	alert('Login/pass invalidos ...');
+	alert('Login/Senha invalidos ...');
 	window.location.href='login.php';
 	</script>
 <?php

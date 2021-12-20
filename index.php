@@ -61,7 +61,7 @@ include './admin/lead-insert.php';
       ?>
       <div data-aos="fade-up" data-aos-delay="600">
         <div class="text-center">
-          <a href="https://api.whatsapp.com/send?phone=8694807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+          <a href="https://api.whatsapp.com/send?phone=5586994807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
             <span>LIGUE AGORA</span>
             <i class="bi bi-phone"></i>
           </a>
@@ -99,7 +99,7 @@ include './admin/lead-insert.php';
                     <ul>
                       <li><?php echo $nome ?> AGÚA ADICIONADA DE SAIS</li>
                     </ul>
-                    <a href="https://api.whatsapp.com/send?phone=8694807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações" class="btn-buy">SAIBA MAIS</a>
+                    <a href="https://api.whatsapp.com/send?phone=5586994807384&text=Olá%20Água%20da%20Boa%20Fonthe%20visitei%20o%20site%20e%20gostaria%20de%20mais%20informações" class="btn-buy">SAIBA MAIS</a>
                   </div>
                 </div>
             <?php
@@ -107,7 +107,6 @@ include './admin/lead-insert.php';
             }
             ?>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
 

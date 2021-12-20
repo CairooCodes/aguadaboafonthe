@@ -63,7 +63,7 @@
           Estamos alinhados e obedecemos a todas as diretrizes e orientações junto aos órgãos anuentes.
           Além de termos equipamentos modernos, atualizações e treinamentos constantes, temos um laboratório para as inspeções e testes diários da nossa água, assegurando qualidade e zelo pelo nosso consumidor.
         </p>
-        <h1><span>VISSÃO</span></h1>
+        <h1><span>VISÃO</span></h1>
         <p>
           Olhar a empesa como uma estrutura que precisa inovar e buscar sempre a vanguarda do mercado, ter como alvo a excelência na sua atividade principal.
         </p>
