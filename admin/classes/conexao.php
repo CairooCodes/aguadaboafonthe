@@ -3,8 +3,8 @@
 abstract class Conexao{
 
     /*nesta classe só utilizo o meu user e a senha do do DB*/
-    const USER = "aguadaboafonth";
-    const PASS = "Cf3571fcc";
+    const USER = "root";
+    const PASS = "root";
 
     private static $instance = null;
 
@@ -13,7 +13,7 @@ abstract class Conexao{
         try{
             if(self::$instance == null):
                 /*Abaixo mostro a instancia de qual DB estou utilizando e o nome do database*/
-                $dsn = "mysql:host=aguadaboafonth.mysql.dbaas.com.br;dbname=aguadaboafonth";
+                $dsn = "mysql:host=localhost;dbname=aguadaboa";
                 self::$instance = new PDO($dsn, self::USER, self::PASS);
                 self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

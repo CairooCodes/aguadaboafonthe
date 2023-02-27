@@ -39,7 +39,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.php">Home</a></li>
+          <li><a href="home.php">Home</a></li>
           <li>Quem Somos</li>
         </ol>
         <h2>Quem Somos</h2>

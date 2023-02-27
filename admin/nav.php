@@ -3,7 +3,7 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-        <a href="../index.php" class="simple-text logo-normal">
+        <a href="../home.php" class="simple-text logo-normal">
           <img class="img-fluid" src="../assets/img/logo.png">
         </a>
       </div>

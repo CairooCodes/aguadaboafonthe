@@ -42,7 +42,7 @@ $nome2 = $_GET['nome'];
       <div class="container">
 
         <ol>
-          <li><a href="index.php">Página Inicial</a></li>
+          <li><a href="home.php">Página Inicial</a></li>
           <li><?php echo $nome2 ?></li>
         </ol>
         <h2><?php echo $nome2 ?></h2>

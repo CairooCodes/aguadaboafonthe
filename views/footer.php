@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-12 footer-info">
-            <a href="index.php" class="logo d-flex align-items-center">
+            <a href="home.php" class="logo d-flex align-items-center">
               <img src="assets/img/logo.png" alt="">
             </a>
             <p></p>
@@ -20,7 +20,7 @@
           <div class="col-lg-4 col-6 footer-links">
             <h4>MAPA DO SITE</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.php">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="home.php">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="quem-somos.php">Quem Somos</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#products">Produtos</a></li>
               <!--<li><i class="bi bi-chevron-right"></i> <a href="#">Blog</a></li>-->

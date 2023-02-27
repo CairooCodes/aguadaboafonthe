@@ -85,7 +85,7 @@ if(!isset($errMSG))
     if($stmt->execute())
     {
       echo("<script type= 'text/javascript'>alert('Obrigado! Em breve nossa equipe entrará em contato com você');</script>
-      <script>window.location = 'index.php';</script>");
+      <script>window.location = 'home.php';</script>");
     }
     else
     {

@@ -2,15 +2,15 @@
 <header id="header" class="header fixed-top">
   <div class="container-fluid container-xl d-flex justify-content-between">
     <div>
-      <a href="index.php" class="logo back-to-top d-flex align-items-center">
+      <a href="home.php" class="logo back-to-top d-flex align-items-center">
         <img src="assets/img/logo-natal.png" alt="">
       </a>
     </div>
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
+        <li><a class="nav-link scrollto active" href="home.php">Home</a></li>
         <li><a class="nav-link" href="quem-somos.php">Quem Somos</a></li>
-        <li><a class="nav-link" href="index.php#products">Produtos</a></li>
+        <li><a class="nav-link" href="home.php#products">Produtos</a></li>
           <!--<ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
