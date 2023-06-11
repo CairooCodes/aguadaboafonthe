@@ -17,8 +17,11 @@ include './admin/lead-insert.php';
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
-
-
+  <meta property="og:title" content="Água da Boa Fonthe">
+  <meta property="og:site_name" content="Água da Boa Fonthe">
+  <meta property="og:url" content="https://aguadaboafonthe.com.br" />
+  <meta property="og:description" content="Água da Boa Fonthe">
+  <meta property="og:image" content="https://aguadaboafonthe.com.br/assets/img/logo.png">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -90,9 +93,9 @@ include './admin/lead-insert.php';
             ?>
                 <div class="swiper-slide shadow p-4">
                   <div class="box p-4">
-                    <?php if ($status=='2') {?>
+                    <?php if ($status == '2') { ?>
                       <span class="featured">EM BREVE</span>
-                    <?php }?>
+                    <?php } ?>
                     <h3><a href="produto.php?nome=<?php echo $nome ?>"><?php echo $nome ?></a></h3>
                     <!--<div class="price"><sup>R$</sup>10,00</div>-->
                     <img src="./admin/uploads/produtos/<?php echo $row['img']; ?>" class="img-fluid" alt="">
@@ -174,7 +177,9 @@ include './admin/lead-insert.php';
                     <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
                   </div>
                   <div class="form-group col-md-12 mb-2">
-                    <label for="nome"><h3 class="text-center">Assunto</h3></label>
+                    <label for="nome">
+                      <h3 class="text-center">Assunto</h3>
+                    </label>
                     <select name="opc" id="opc" class="form-control">
                       <option value='atendimento'>Atendimento</option>
                       <option value='financeiro'>Financeiro</option>
@@ -183,7 +188,9 @@ include './admin/lead-insert.php';
                   </div>
                 </div>
                 <div class="form-group mb-2">
-                  <label for="nome"><h3 class="text-center">Mensagem</h3></label>
+                  <label for="nome">
+                    <h3 class="text-center">Mensagem</h3>
+                  </label>
                   <textarea class="form-control" name="mensagem" rows="10" placeholder="Deixe uma mensagem para nós"></textarea>
                 </div>
                 <div class="text-center"><button type="submit" name="submit">Enviar</button></div>

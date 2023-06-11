@@ -4,7 +4,7 @@
     <div class="container-fluid container-xl d-flex justify-content-between">
       <div>
         <a href="home.php" class="logo  d-flex align-items-center">
-          <img src="assets/img/logo-natal.png" alt="">
+          <img src="assets/img/logo.png" alt="">
         </a>
       </div>
       <nav id="navbar" class="navbar">
