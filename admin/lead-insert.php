@@ -35,20 +35,20 @@ function substr_in_array($needle, $haystack)
     return false;
 }
 
-function phoneValidate($phone)
-{
-    $regex = '/^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/';
+// function phoneValidate($phone)
+// {
+//     $regex = '/^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/';
 
-    if (preg_match($regex, $phone) == false) {
+//     if (preg_match($regex, $phone) == false) {
 
-        // O número não foi validado.
-        return false;
-    } else {
+//         // O número não foi validado.
+//         return false;
+//     } else {
 
-        // Telefone válido.
-        return true;
-    }        
-}
+//         // Telefone válido.
+//         return true;
+//     }        
+// }
 
 $strings = array('http', 'sexy', '<a', 'sex', 'sexual', 'pussy', 'tudo', 'photo', 'https', 'porn', 'porno' );
 
@@ -56,9 +56,9 @@ if (substr_in_array( $strings, $msg_explodida ) == true) {
     $errMSG = "Mensagem não enviada";
 }
 
-if (phoneValidate( $whats ) == false) {
-    $errMSG = "Por favor, insira um número válido";
-}
+// if (phoneValidate( $whats ) == false) {
+//     $errMSG = "Por favor, insira um número válido";
+// }
 
 if(empty($nome2)){
     $errMSG = "Por favor insira o nome";
